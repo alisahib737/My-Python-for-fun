@@ -1,3 +1,4 @@
+# Change the variabel in name line-2 to change the word also change the hints in line-22,line-24 and line-26  
 name = "banana"
 _1 = "_"
 _2 = "_"
@@ -65,10 +66,15 @@ while True:
             print("Invalid Input, Try Guessing one letter at a time or ask for hints. ")
         else:
             print("Invalid Input, Try Guessing one letter at a time.")
-score = repitions * 100 - hint_limit*500
-if score < 0:
-    score = 0
-if repitions == 0:
-    print("You have failed to guess the word")
-else :
-    print("Your score is :",score)
+    if repitions == 0 :
+        break
+if repitions == 0 :
+    print("You've Failed at the game")
+else:
+    score = repitions * 100 - hint_limit * 500
+    if score < 0:
+        score = 0
+    if repitions == 0:
+        print("You have failed to guess the word")
+    else:
+        print("Your score is :", score)
