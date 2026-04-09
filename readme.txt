@@ -1,0 +1,1 @@
+i created this game as my 2nd project. The First was a really simple game. but this one used pygame and was a bit more complex. i created this after about 12-13 hours of coding
